@@ -1,0 +1,13 @@
+body{
+    padding: 100px;
+}
+.submit{
+    margin-top: 20px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px lightgray;
+    padding: 25px 25px 25px 25px;
+}
+span{
+    color: crimson;
+}
