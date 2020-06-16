@@ -8,6 +8,24 @@ body{
     box-shadow: 1px 1px 10px lightgray;
     padding: 25px 25px 25px 25px;
 }
-span{
+#sr{
     color: crimson;
+}
+#transaction-area{
+    display: none;
+}
+.deposit{
+    background-color: slateblue;
+}
+.withdraw{
+    background-color: lightsalmon;
+}
+.balance{
+    background-color: orange;
+}
+.status{
+    margin: 20px;
+    color: white;
+    padding: 25px;
+    border-radius: 10px;
 }
