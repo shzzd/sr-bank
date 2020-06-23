@@ -82,10 +82,15 @@
             
             const newDepositNumber = getInputNumber("depositAmount");
 
-            updateSpanText("current-deposit",newDepositNumber);
-            updateSpanText("current-balance",newDepositNumber);
+            if(newDepositNumber<1){
+                alert('Deposit amount cannot be 0 or negative!')
+            }
+            else{
+                updateSpanText("current-deposit",newDepositNumber);
+                updateSpanText("current-balance",newDepositNumber);
 
-            document.getElementById("depositAmount").value = "";
+                document.getElementById("depositAmount").value = "";
+            }
         })
         
         //withdraw button event handler
@@ -94,10 +99,15 @@
             
             const newWithdrawNumber = getInputNumber("withdrawAmount");
 
-            updateSpanText("current-withdraw",newWithdrawNumber);
-            updateSpanText("current-balance", -1 * newWithdrawNumber);
+            if(newDepositNumber<1){
+                alert('Withdraw amount cannot be 0 or negative!')
+            }
+            else{
+                updateSpanText("current-withdraw",newWithdrawNumber);
+                updateSpanText("current-balance", -1 * newWithdrawNumber);
 
-            document.getElementById("withdrawAmount").value = "";
+                document.getElementById("withdrawAmount").value = "";
+            }
         })
         function getInputNumber(id){
             const newId = document.getElementById(id).value;
